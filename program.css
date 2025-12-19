@@ -1,0 +1,148 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== BACKGROUND (SAME AS MAIN) ===== */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #0a0a0a, #bfa34a, #5a2a80);
+  color: white;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* Dark overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* ===== NAVBAR ===== */
+.program-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.program-nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+#logo {
+  height: 50px;
+}
+
+/* Nav links */
+.program-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  width: 40%;
+}
+
+.program-nav-links.left {
+  justify-content: flex-start;
+}
+
+.program-nav-links.right {
+  justify-content: flex-end;
+}
+
+.program-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+
+/* Gold underline */
+.program-nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #d4af37;
+  transition: width 0.3s ease;
+}
+
+.program-nav-links a:hover::after,
+.program-nav-links a.active::after {
+  width: 100%;
+}
+
+/* ===== HERO ===== */
+.program-hero {
+  text-align: center;
+  padding: 5rem 1rem 4rem;
+}
+
+.program-hero h1 {
+  font-size: 3rem;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 4rem 1rem;
+}
+
+/* ===== GLASS SECTIONS ===== */
+.section {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== IMAGE + TEXT BLOCK ===== */
+.media-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+/* Image container */
+.media-block img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid rgba(212, 175, 55, 0.4);
+}
+
+/* Text */
+.media-text h2 {
+  color: #d4af37;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.media-text p {
+  opacity: 0.9;
+  font-size: 1.05rem;
+}
+
+/* Reverse layout */
+.media-block.reverse {
+  direction: rtl;
+}
