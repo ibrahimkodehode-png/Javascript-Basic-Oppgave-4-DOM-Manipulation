@@ -146,3 +146,10 @@ body::before {
 .media-block.reverse {
   direction: rtl;
 }
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+}
