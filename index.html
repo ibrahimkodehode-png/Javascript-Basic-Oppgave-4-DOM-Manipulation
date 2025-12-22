@@ -11,20 +11,15 @@
     <!-- NAVBAR -->
     <nav class="main-navbar">
       <div class="main-nav-container">
-        <!-- LEFT LINKS -->
         <ul class="main-nav-links left">
           <li><a href="#programs">Programs</a></li>
           <li><a href="#about">About</a></li>
         </ul>
-
-        <!-- CENTER LOGO -->
         <img
           src="images/yzYTPJ-multi-sport-program-pictures-png-images-pngio.png"
           alt="Youth Sports Logo"
           id="logo"
         />
-
-        <!-- RIGHT LINKS -->
         <ul class="main-nav-links right">
           <li><a href="#development">Development</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -44,7 +39,6 @@
     <!-- PROGRAMS -->
     <section id="programs" class="programs-section">
       <h2>Our Programs</h2>
-
       <div class="program-grid">
         <a href="football.html" class="program-card">
           <span>⚽</span>
@@ -75,39 +69,17 @@
     <!-- ABOUT -->
     <section id="about" class="about-section">
       <h2>About Us</h2>
-
       <div class="about-box">
         <p>
           Youth Sports Development is dedicated to helping young athletes grow
-          both physically and mentally. Through structured training, teamwork,
-          and discipline, we focus on building confidence, leadership, and
-          strong character.
+          both physically and mentally...
         </p>
-        <p>
-          Our programs are designed for all skill levels, creating a positive
-          environment where kids learn, improve, and thrive. We believe that
-          sports are more than just games—they are opportunities to teach life
-          skills, resilience, and healthy habits that last a lifetime.
-        </p>
-        <p>
-          Every athlete in our programs receives personalized attention,
-          ensuring that their individual strengths are nurtured and their areas
-          for growth are supported. From mastering fundamental techniques to
-          developing strategic thinking, we emphasize a holistic approach that
-          balances physical conditioning, mental focus, and emotional
-          intelligence.
-        </p>
-        <p>
-          Beyond training, we encourage community involvement, mentorship, and
-          sportsmanship. Our goal is to instill a sense of responsibility and
-          pride in every participant, helping them become not only skilled
-          athletes but also confident, compassionate, and motivated individuals.
-        </p>
+        <p>Our programs are designed for all skill levels...</p>
+        <p>Every athlete in our programs receives personalized attention...</p>
+        <p>Beyond training, we encourage community involvement...</p>
         <p>
           At Youth Sports Development, we are committed to fostering a safe,
-          inclusive, and inspiring environment where young people can explore
-          their potential, celebrate achievements, and embrace challenges with
-          determination and enthusiasm.
+          inclusive, and inspiring environment...
         </p>
       </div>
       <button id="toggle-button">Hide About Us</button>
@@ -116,7 +88,6 @@
     <!-- DEVELOPMENT -->
     <section id="development" class="development-section">
       <h2>Development Philosophy</h2>
-
       <div class="development-grid">
         <div class="development-card">
           <h3>Physical Growth</h3>
@@ -144,10 +115,41 @@
       </div>
     </section>
 
+    <!-- NEW USER CHOICE SECTION -->
+    <section id="choose-sport" class="choose-sport-section">
+      <h2>Choose the Best Sport for Your Child</h2>
+      <div class="choose-form">
+        <label for="age">Child's Age:</label>
+        <select id="age">
+          <option value="">Select Age</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+        </select>
+
+        <label for="sport">Sport:</label>
+        <select id="sport">
+          <option value="">Select Sport</option>
+          <option value="football">Football</option>
+          <option value="basketball">Basketball</option>
+          <option value="martial-arts">Martial Arts</option>
+          <option value="brain">Brain Development</option>
+        </select>
+
+        <button id="recommend-btn">Get Recommendation</button>
+      </div>
+      <div id="recommendation" class="recommendation-box"></div>
+    </section>
+
     <!-- CONTACT -->
     <section id="contact" class="contact-section">
       <h2>Contact Us</h2>
-
       <form class="contact-form">
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
